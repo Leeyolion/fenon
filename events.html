@@ -177,6 +177,13 @@
         source.src = src;       // change video
         video.load();           // reload
         video.play().catch(()=>{}); // play again (mobile safe)
+
+        document.addEventListener("DOMContentLoaded", () => {
+            video.muted = true; // must be set in JS too
+            video.play().catch(() => {
+            console.log("Autoplay blocked");
+            });
+        });
     }
     </script>
     <!-- scroller -->
