@@ -463,6 +463,10 @@ body {
         width: 100%;
     }
 
+    .videoslider .navigation li {
+        margin: 0 3px;
+    }
+
     .videoslider .navigation li img:hover {
         width: 55px;
     }
