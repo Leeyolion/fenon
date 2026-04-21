@@ -463,8 +463,12 @@ body {
         width: 100%;
     }
 
+    .videoslider .navigation li img:hover {
+        width: 55px;
+    }
+
     .videoslider .navigation li img {
-        width: 80px;             /* better for mobile */
+        width: 50px;             /* better for mobile */
     }
 }
 
