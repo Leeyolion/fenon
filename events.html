@@ -169,9 +169,15 @@
 
     <!-- scroller -->
     <script type="text/javascript">
-        function videoUrl(hmmmmm) {
-            document.getElementById("slider").src = hmmmmm;
-        }
+        function videoUrl(src) {
+        const video = document.getElementById("slider");
+        const source = video.querySelector("source");
+
+        video.pause();          // stop current video
+        source.src = src;       // change video
+        video.load();           // reload
+        video.play().catch(()=>{}); // play again (mobile safe)
+    }
     </script>
     <!-- scroller -->
 
